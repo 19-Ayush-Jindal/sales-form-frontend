@@ -2,7 +2,7 @@ import { useState } from "react";
 import SearchableDropdown from "../components/searchabledropdown/searchabledropdown";
 import "./salesform.css";
 import AdminPanel from "../components/adminpanel/adminpanel.jsx";
-import  "../components/adminpanel/AdminPanel.css";
+import  "../components/adminpanel/adminpanel.css";
 import AdminDashboard
 from "../components/admindashboard/admindashboard.jsx";
 
