@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./AdminPanel.css";
+import "./adminpanel.css";
 
 function AdminPanel({
     onClose,
