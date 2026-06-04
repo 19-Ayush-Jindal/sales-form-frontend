@@ -1,0 +1,31 @@
+.product-manager {
+
+    width: 600px;
+
+    background: white;
+
+    padding: 24px;
+
+    border-radius: 12px;
+
+}
+
+.add-row {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-bottom: 20px;
+
+}
+
+.product-item {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 12px;
+
+}

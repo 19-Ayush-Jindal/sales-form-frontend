@@ -1,0 +1,21 @@
+.buyer-manager {
+
+    width: 600px;
+
+    background: white;
+
+    padding: 24px;
+
+    border-radius: 12px;
+
+}
+
+.buyer-item {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 12px;
+
+}
