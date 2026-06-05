@@ -18,7 +18,8 @@ function SalesForm({
 }) {
 
     const [sale, setSale] = useState({
-        salesid: Date.now().toString(),
+        // salesid: Date.now().toString(),
+        // salesid: `SALE-${new Date().toISOString().slice(0,10).replaceAll("-","")}-${Date.now().toString().slice(-4)}`,
         buyerName: "",
         truckNumber: "",
         date: new Date().toISOString().split("T")[0],
@@ -235,7 +236,23 @@ function updatePrice(id, value) {
     setErrors({});
 
     try {
+        const saleToSave = {
 
+    ...sale,
+
+    salesid:
+        `SALE-${
+            new Date()
+                .toISOString()
+                .slice(0,10)
+                .replaceAll("-","")
+        }-${
+            Date.now()
+                .toString()
+                .slice(-4)
+        }`
+
+};
         const response =
             await fetch(
 
@@ -251,7 +268,7 @@ function updatePrice(id, value) {
 
                     body:
                         JSON.stringify(
-                            sale
+                            saleToSave
                         )
                 }
 
