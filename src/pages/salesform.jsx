@@ -18,6 +18,7 @@ function SalesForm({
 }) {
 
     const [sale, setSale] = useState({
+        salesid: Date.now().toString(),
         buyerName: "",
         truckNumber: "",
         date: new Date().toISOString().split("T")[0],
@@ -25,7 +26,7 @@ function SalesForm({
         items: [
         {
             // id: crypto.randomUUID(),
-            id: Date.now().toString(),
+            id: Date.now().toString()+ti,
             product: "",
             quantity: "",
             price: ""
