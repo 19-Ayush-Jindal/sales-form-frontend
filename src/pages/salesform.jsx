@@ -645,13 +645,13 @@ function updatePrice(id, value) {
 
                 <div className="footer">
 
-    <button
+    {/* <button
         type="button"
         className="admin-btn"
         onClick={() => setShowAdmin(true)}
     >
         Admin
-    </button>
+    </button> */}
 
     <button
         type="submit"
