@@ -28,7 +28,7 @@ function SalesForm({
         items: [
         {
             // id: crypto.randomUUID(),
-            id: Date.now().toString()+ti,
+            id: Date.now().toString(),
             product: "",
             quantity: "",
             price: ""
