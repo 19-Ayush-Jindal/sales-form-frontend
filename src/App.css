@@ -182,3 +182,68 @@
     border-right-color: var(--border);
   }
 }
+.loading-screen {
+
+    height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 16px;
+
+    background: #f5f7fb;
+
+}
+
+.loader {
+
+    width: 60px;
+
+    height: 60px;
+
+    border: 6px solid #e5e7eb;
+
+    border-top: 6px solid #1a73e8;
+
+    border-radius: 50%;
+
+    animation: spin 1s linear infinite;
+
+}
+
+.loading-screen h2 {
+
+    margin: 0;
+
+    color: #202124;
+
+}
+
+.loading-screen p {
+
+    margin: 0;
+
+    color: #666;
+
+}
+
+@keyframes spin {
+
+    from {
+
+        transform: rotate(0deg);
+
+    }
+
+    to {
+
+        transform: rotate(360deg);
+
+    }
+
+}
