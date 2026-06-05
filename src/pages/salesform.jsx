@@ -237,23 +237,43 @@ function updatePrice(id, value) {
     setErrors({});
 
     try {
-        const saleToSave = {
+         const now = new Date();
+//         const saleToSave = {
 
-    ...sale,
+//     ...sale,
+    
+//     salesid:
+//         `SALE-${
+//             new Date()
+//                 .toISOString()
+//                 .slice(0,10)
+//                 .replaceAll("-","")
+//         }-${
+//             Date.now()
+//                 .toString()
+//                 .slice(-4)
+//         }`
 
-    salesid:
-        `SALE-${
-            new Date()
-                .toISOString()
-                .slice(0,10)
-                .replaceAll("-","")
-        }-${
-            Date.now()
-                .toString()
-                .slice(-4)
-        }`
+// };
 
-};
+const saleToSave = {
+            ...sale,
+            salesid: `SALE-${
+                now.getFullYear()
+            }${
+                String(now.getMonth() + 1).padStart(2, '0')
+            }${
+                String(now.getDate()).padStart(2, '0')
+            }-${
+                String(now.getHours()).padStart(2, '0')
+            }${
+                String(now.getMinutes()).padStart(2, '0')
+            }${
+                String(now.getSeconds()).padStart(2, '0')
+            }${
+                String(now.getMilliseconds()).padStart(3, '0')
+            }`
+        };
         const response =
             await fetch(
 
