@@ -20,6 +20,7 @@ function SalesForm({
     const [sale, setSale] = useState({
         // salesid: Date.now().toString(),
         // salesid: `SALE-${new Date().toISOString().slice(0,10).replaceAll("-","")}-${Date.now().toString().slice(-4)}`,
+        salesid: "",
         buyerName: "",
         truckNumber: "",
         date: new Date().toISOString().split("T")[0],
